@@ -26,12 +26,12 @@ dag = DAG(
     }
 )
 
-schema = "keeyong"
+schema = "beam8686"
 table = "nps"
 s3_bucket = "grepp-data-engineering"
 s3_key = schema + "-" + table
 
-# s3_key가 존재하지 않으면 에러를 냄! 
+# s3_key가 존재하지 않으면 에러를 냄!
 s3_folder_cleanup = S3DeleteObjectsOperator(
     task_id = 's3_folder_cleanup',
     bucket = s3_bucket,
