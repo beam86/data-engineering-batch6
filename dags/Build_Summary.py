@@ -21,7 +21,7 @@ def get_Redshift_connection():
 
 def execSQL(**context):
 
-    schema = context['params']['schema'] 
+    schema = context['params']['schema']
     table = context['params']['table']
     select_sql = context['params']['sql']
 
@@ -62,7 +62,7 @@ execsql = PythonOperator(
     task_id = 'execsql',
     python_callable = execSQL,
     params = {
-        'schema' : 'keeyong',
+        'schema' : 'beam8686',
         'table': 'channel_summary',
         'sql' : """SELECT
 	DISTINCT A.userid,

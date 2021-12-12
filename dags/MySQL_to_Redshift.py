@@ -25,7 +25,7 @@ dag = DAG(
     }
 )
 
-schema = "beeam8686"
+schema = "beam8686"
 table = "nps"
 s3_bucket = "grepp-data-engineering"
 s3_key = schema + "-" + table
