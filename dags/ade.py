@@ -14,7 +14,7 @@ import logging
 import psycopg2
 import json
 
-id = 'MySQL_to_Redshift_v2'
+id = 'MySQL_to_Redshift_clean'
 s_date = datetime(2021,11,27)
 schema = "beam8686"
 table = "nps"
