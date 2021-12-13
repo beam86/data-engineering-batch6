@@ -18,7 +18,7 @@ dag = DAG(
     start_date = datetime(2021,11,27), # 날짜가 미래인 경우 실행이 안됨
     schedule_interval = '0 9 * * *',  # 적당히 조절
     max_active_runs = 1,
-    catchup = True,
+    catchup = False,
     default_args = {
         'retries': 1,
         'retry_delay': timedelta(minutes=3),
